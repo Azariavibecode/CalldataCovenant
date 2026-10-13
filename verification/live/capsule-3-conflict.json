@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-10-13T03:35:24.432Z",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "contract": "0xd07751C74656495058C0A63C0137F7a5C13cBc60",
+  "capsule_id": 3,
+  "case": "ambiguous",
+  "expected_terminal_verdict": "INCONCLUSIVE",
+  "observed_result": "CONFLICT_SAFE_PENDING",
+  "explanation": "All adjudication attempts finalized MAJORITY_DISAGREE; state remained GROUNDED/PENDING and no terminal counter was incremented.",
+  "capsule": {
+    "capsule_id": 3,
+    "chain_id": 1,
+    "creator": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "disclosure_source": {
+      "commit": "525c3e6081be3cf95a0c303d711a799a4b525142",
+      "digest": "ade8f5fa7bccbc75daa5c158adf938f032b856124a91bbdb1dfefa9faee9916e",
+      "marker": "## AMBIGUOUS",
+      "owner": "Azariavibecode",
+      "path": "/fixtures/disclosures.md",
+      "repo": "CalldataCovenant"
+    },
+    "label": "public-governance-call",
+    "reason_code": "",
+    "state": "GROUNDED",
+    "tx_hash": "0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347",
+    "verdict": "PENDING"
+  },
+  "ground": {
+    "calldata_digest": "a583a6e76149c279dea3afa1d889bd7f9cf851b9fe6cdb0ae5263cc40205451a",
+    "disclosure": "## AMBIGUOUS\nEthereum transaction 0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347 performs the appropriate USDT operation. Its method, recipient, amount, and effects are unspecified.",
+    "disclosure_digest": "23c7c6cdf0a026048b40def15ff259b8d7a6d3b83999b48f67a1c7e01dd4f7c9",
+    "method_call": "transfer(address _to, uint256 _value)",
+    "method_id": "a9059cbb",
+    "parameters": [
+      {
+        "name": "_to",
+        "type": "address",
+        "value": "0x23D6FF429f1DfE678543a9803c8964AF7e5aA396"
+      },
+      {
+        "name": "_value",
+        "type": "uint256",
+        "value": "2000000000"
+      }
+    ],
+    "sender": "0x040c9620069c71dc571974e2b2249921bbd71f42",
+    "source_digest": "36bf0b5747dfe7f79a03c9bc09af63e93e352d3c61199fbf025fd2c962b485f8",
+    "status": "GROUNDED",
+    "target": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0",
+    "verified_source": "[omitted 14888 chars]"
+  },
+  "transactions": [
+    {
+      "label": "register",
+      "hash": "0x1c3644081138d1b3a51c8ada9052c6f7123e78cc45f6470a2e9e81eca3dd933c",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x1c3644081138d1b3a51c8ada9052c6f7123e78cc45f6470a2e9e81eca3dd933c"
+    },
+    {
+      "label": "ground",
+      "hash": "0x66e949ecbbbba9355b3b95e36c3b3ada2d11a126e2d5f058435fb6243876c089",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x66e949ecbbbba9355b3b95e36c3b3ada2d11a126e2d5f058435fb6243876c089"
+    },
+    {
+      "label": "adjudicate_1",
+      "hash": "0x43517d53a4dc281fb9ed9284de71972b4422afbc904df68f1a4ec0eebcc982da",
+      "result_name": "MAJORITY_DISAGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x43517d53a4dc281fb9ed9284de71972b4422afbc904df68f1a4ec0eebcc982da"
+    },
+    {
+      "label": "adjudicate_2",
+      "hash": "0xd06a8965966d321e67022e94c0fe0eec79c44afddc2ca8cbe1ae9958c02d7019",
+      "result_name": "MAJORITY_DISAGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xd06a8965966d321e67022e94c0fe0eec79c44afddc2ca8cbe1ae9958c02d7019"
+    },
+    {
+      "label": "adjudicate_3",
+      "hash": "0xcd8c5dad73861895d735637b6db40434502e7e291ec4eed408e0e7c871bbc1e0",
+      "result_name": "MAJORITY_DISAGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xcd8c5dad73861895d735637b6db40434502e7e291ec4eed408e0e7c871bbc1e0"
+    },
+    {
+      "label": "adjudicate_4",
+      "hash": "0x476f10ca0dcf2cadeafedf67635d2d1e1d82dd31965e88f191fbcfc1278eb81a",
+      "result_name": "MAJORITY_DISAGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x476f10ca0dcf2cadeafedf67635d2d1e1d82dd31965e88f191fbcfc1278eb81a"
+    }
+  ]
+}

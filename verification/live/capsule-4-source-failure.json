@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-13T03:34:46.678Z",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "contract": "0xd07751C74656495058C0A63C0137F7a5C13cBc60",
+  "capsule_id": 4,
+  "purpose": "negative control: invalid disclosure digest cannot be grounded",
+  "result": "SOURCE_UNVERIFIED; no ground persisted and capsule remains REGISTERED/PENDING",
+  "counts": {
+    "aligned_count": 1,
+    "capsule_count": 5,
+    "hazard_count": 1,
+    "inconclusive_count": 0
+  },
+  "capsule": {
+    "capsule_id": 4,
+    "chain_id": 1,
+    "creator": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "disclosure_source": {
+      "commit": "525c3e6081be3cf95a0c303d711a799a4b525142",
+      "digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "marker": "## ALIGNED",
+      "owner": "Azariavibecode",
+      "path": "/fixtures/disclosures.md",
+      "repo": "CalldataCovenant"
+    },
+    "label": "invalid-source-negative-control",
+    "reason_code": "",
+    "state": "REGISTERED",
+    "tx_hash": "0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347",
+    "verdict": "PENDING"
+  },
+  "ground": {
+    "error": "GROUND_NOT_FOUND"
+  },
+  "transactions": [
+    {
+      "label": "register_invalid_source",
+      "hash": "0x0521d5629eaedfbf0d1a5880734a7b9c34bac3ff059985e1319c615ea3c44679",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x0521d5629eaedfbf0d1a5880734a7b9c34bac3ff059985e1319c615ea3c44679"
+    },
+    {
+      "label": "ground_invalid_source",
+      "hash": "0xdd470c2d79dac0480202152deaffe7fbd6f6d765ba08326a8ba1ccfa18457975",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xdd470c2d79dac0480202152deaffe7fbd6f6d765ba08326a8ba1ccfa18457975"
+    }
+  ]
+}

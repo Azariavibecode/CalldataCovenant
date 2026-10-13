@@ -22,7 +22,11 @@ async function submit(account, functionName, args, label, allowDisagree = false)
   }
   console.log(`${label}_submitted: ${hash}`);
   const receipt = await reader.waitForTransactionReceipt({ hash, status: TransactionStatus.FINALIZED, interval: 3000, retries: 140 });
-  const tx = await reader.getTransaction({ hash });
+  let tx;
+  for (let rpcAttempt = 1; rpcAttempt <= 5; rpcAttempt += 1) {
+    try { tx = await reader.getTransaction({ hash }); break; }
+    catch (error) { if (rpcAttempt === 5) throw error; await new Promise((resolve) => setTimeout(resolve, 5000)); }
+  }
   const result = tx?.result_name || "FINALIZED";
   if (!allowDisagree && result !== "MAJORITY_AGREE" && result !== "FINALIZED") throw new Error(`${label}: ${result}`);
   transactions.push({ label, hash, actor: account.address, status: receipt.status_name || receipt.status, result_name: result, explorer_url: `https://explorer-studio.genlayer.com/transactions/${hash}` });

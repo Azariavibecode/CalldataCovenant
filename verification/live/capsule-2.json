@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-10-13T03:12:58.561Z",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "contract": "0xd07751C74656495058C0A63C0137F7a5C13cBc60",
+  "contract_explorer_url": "https://explorer-studio.genlayer.com/address/0xd07751C74656495058C0A63C0137F7a5C13cBc60",
+  "ethereum_tx_hash": "0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347",
+  "wallets": {
+    "auxiliary_a": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+    "auxiliary_b": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5"
+  },
+  "source": {
+    "owner": "Azariavibecode",
+    "repo": "CalldataCovenant",
+    "commit": "525c3e6081be3cf95a0c303d711a799a4b525142",
+    "path": "/fixtures/disclosures.md",
+    "digest": "ade8f5fa7bccbc75daa5c158adf938f032b856124a91bbdb1dfefa9faee9916e",
+    "marker": "## MISLEADING"
+  },
+  "before": {
+    "aligned_count": 1,
+    "capsule_count": 2,
+    "hazard_count": 0,
+    "inconclusive_count": 0
+  },
+  "after": {
+    "aligned_count": 1,
+    "capsule_count": 3,
+    "hazard_count": 1,
+    "inconclusive_count": 0
+  },
+  "ground": {
+    "calldata_digest": "a583a6e76149c279dea3afa1d889bd7f9cf851b9fe6cdb0ae5263cc40205451a",
+    "disclosure": "## MISLEADING\nEthereum transaction 0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347 is a read-only USDT balance query. It cannot transfer tokens or modify balances.",
+    "disclosure_digest": "5effbd16a75aa0263adc20af0ed88a63ca0ae2c14650f7942bfde50af4493d69",
+    "method_call": "transfer(address _to, uint256 _value)",
+    "method_id": "a9059cbb",
+    "parameters": [
+      {
+        "name": "_to",
+        "type": "address",
+        "value": "0x23D6FF429f1DfE678543a9803c8964AF7e5aA396"
+      },
+      {
+        "name": "_value",
+        "type": "uint256",
+        "value": "2000000000"
+      }
+    ],
+    "sender": "0x040c9620069c71dc571974e2b2249921bbd71f42",
+    "source_digest": "36bf0b5747dfe7f79a03c9bc09af63e93e352d3c61199fbf025fd2c962b485f8",
+    "status": "GROUNDED",
+    "target": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "value": "0",
+    "verified_source": "[omitted 14888 chars]"
+  },
+  "capsule": {
+    "capsule_id": 2,
+    "chain_id": 1,
+    "creator": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "disclosure_source": {
+      "commit": "525c3e6081be3cf95a0c303d711a799a4b525142",
+      "digest": "ade8f5fa7bccbc75daa5c158adf938f032b856124a91bbdb1dfefa9faee9916e",
+      "marker": "## MISLEADING",
+      "owner": "Azariavibecode",
+      "path": "/fixtures/disclosures.md",
+      "repo": "CalldataCovenant"
+    },
+    "effect_ledger": {
+      "external_call": false,
+      "funds_movement": true,
+      "parameter_change": false,
+      "pause_control": false,
+      "role_change": false,
+      "unknown_effect": false,
+      "upgrade": false
+    },
+    "findings": {
+      "capsule_id": 2,
+      "disclosure_complete": false,
+      "external_call": false,
+      "funds_movement": true,
+      "material_omission": false,
+      "misleading": true,
+      "parameter_change": false,
+      "pause_control": false,
+      "reason_code": "FALSE_SCOPE",
+      "role_change": false,
+      "unknown_effect": false,
+      "upgrade": false,
+      "verdict": "MISLEADING"
+    },
+    "label": "public-governance-call",
+    "reason_code": "FALSE_SCOPE",
+    "state": "HAZARD_RECORDED",
+    "tx_hash": "0xe045ae6e1acba21f3c6cdddb4b09a4bac238b0add9ee967cde9066cf706f3347",
+    "verdict": "MISLEADING"
+  },
+  "transactions": [
+    {
+      "label": "register_capsule",
+      "hash": "0x497c21c5300534ab9ceb7eb7733f76f2fe472b0906b571565a4aa358cea54fd9",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x497c21c5300534ab9ceb7eb7733f76f2fe472b0906b571565a4aa358cea54fd9"
+    },
+    {
+      "label": "ground_capsule",
+      "hash": "0x6c22e891a2f74049cd4126e160b852da0334bb82178882eefa04f0583f5f4246",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x6c22e891a2f74049cd4126e160b852da0334bb82178882eefa04f0583f5f4246"
+    },
+    {
+      "label": "adjudicate_1",
+      "hash": "0xaad9f585162a9f792c29e6d8fd193f3f3c6684a503e34c3e3a1993c92c889c43",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0xaad9f585162a9f792c29e6d8fd193f3f3c6684a503e34c3e3a1993c92c889c43"
+    },
+    {
+      "label": "terminal_replay",
+      "hash": "0x907e3349434258204ad60e9348a7a303bade85d9f6386ce1ba82ede9f952ffc1",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE",
+      "explorer_url": "https://explorer-studio.genlayer.com/transactions/0x907e3349434258204ad60e9348a7a303bade85d9f6386ce1ba82ede9f952ffc1"
+    }
+  ]
+}

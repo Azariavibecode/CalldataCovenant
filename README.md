@@ -57,4 +57,4 @@ npm run e2e:studionet
 
 Current local result: `16 passed`. Target runtime: GenLayer `0.2.16`. No frontend is included.
 
-See [architecture](docs/ARCHITECTURE.md), [threat model](docs/THREAT_MODEL.md), [local verification](verification/local-verification.md), and [test-resource manifest](verification/test-resource-manifest.md).
+See [architecture](docs/ARCHITECTURE.md), [threat model](docs/THREAT_MODEL.md), [detailed StudioNet E2E evidence](verification/STUDIONET_E2E.md), [local verification](verification/local-verification.md), and [test-resource manifest](verification/test-resource-manifest.md).
